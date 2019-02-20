@@ -7,6 +7,7 @@ func main() {
 	fmt.Println(bs([]int{1, 2, 3}, 1))
 }
 
+// 二分查找
 func bs(data []int, value int) (index int, exist bool) {
 	length := len(data)
 	if length == 0 {
