@@ -1,3 +1,5 @@
-# README
+# Pragmatic Algorithm
 
-[docs](http://www.huborui.com/algorithm)
+- sort
+    - [x] quick
+
