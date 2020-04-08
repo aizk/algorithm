@@ -29,16 +29,15 @@ def partition1(a, s, e):
     return i
 
 def partition2(a, s, e):
-    t = a[s]
-    i = s
-    j = e
+    i = s - 1
+    j = e + 1
     while True:
-        while i < j:        
-            if a[j] <= t: break
-            j -= 1
         while i < j:
-            if a[i] >= t: break # 条件必须是 >=
+            j -= 1
+            if a[j] <= t: break
+        while i < j:
             i += 1
+            if a[i] >= t: break # 条件必须是 >=
         if i < j:
             exch(a, i, j)
         else:
@@ -50,7 +49,7 @@ def exch(a, i, j):
     a[j] = t
 
 if __name__ == "__main__":
-    a = [5, 4, 3, 2, 1]
+    a = [5, 5, 5, 5, 4, 3, 2, 1]
 
     wrap(partition1)(a, 0, len(a) - 1)
     print(a)
