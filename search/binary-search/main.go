@@ -1,14 +1,7 @@
-package main
-
-import "fmt"
-
-func main() {
-	// 首先要有序
-	fmt.Println(bs([]int{1, 2, 3}, 1))
-}
+package binary_search
 
 // 二分查找
-func bs(data []int, value int) (index int, exist bool) {
+func BinarySearch(data []int, value int) (index int, find bool) {
 	length := len(data)
 	if length == 0 {
 		return

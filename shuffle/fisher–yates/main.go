@@ -20,7 +20,7 @@ func shuffle(x []int) {
 	rand.Seed(time.Now().Unix())
 
 	i := length - 1
-	for i > 0  {
+	for i > 0 {
 		// rand
 		j := rand.Intn(i + 1)
 		// exchange
