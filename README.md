@@ -1,6 +1,4 @@
 # Pragmatic Algorithm
 
-- sort
-    - [x] quick
-
-- shuffle 洗牌
+- LRU
+- Shuffle 洗牌

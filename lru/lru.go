@@ -98,4 +98,3 @@ func NewNode(key, value interface{}) *Node {
 		value: value,
 	}
 }
-
